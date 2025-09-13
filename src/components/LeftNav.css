@@ -1,0 +1,31 @@
+.left-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    background-color: #3c4049;
+    border-radius: 8px;
+    height: fit-content;
+}
+
+.nav-button {
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.nav-button:hover {
+    background-color: #4a4e58;
+}
+
+.nav-button.active {
+    background-color: #62dafb;
+    color: #282c34;
+    font-weight: bold;
+}

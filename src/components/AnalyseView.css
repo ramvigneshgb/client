@@ -1,0 +1,25 @@
+.analyse-view {
+    padding: 20px;
+    border: 1px solid #555;
+    border-radius: 8px;
+    background-color: #3c4049;
+    text-align: left;
+}
+
+.intro-text {
+    margin-bottom: 25px;
+    color: #ccc;
+}
+
+.analysis-card {
+    background-color: #282c34;
+    border-left: 4px solid #62dafb;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.analysis-card h3 {
+    margin-top: 0;
+    color: #62dafb;
+}

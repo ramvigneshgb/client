@@ -1,0 +1,11 @@
+.assignment-view {
+    padding: 20px;
+    border: 1px solid #555;
+    border-radius: 8px;
+    background-color: #3c4049;
+    text-align: left;
+}
+.assignment-text {
+    white-space: pre-wrap;
+    line-height: 1.6;
+}

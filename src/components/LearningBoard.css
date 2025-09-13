@@ -1,0 +1,106 @@
+.learning-board {
+    border: 1px solid #555;
+    border-radius: 8px;
+    background-color: #3c4049;
+    text-align: left;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.learning-board.error {
+    border-color: #ff4d4d;
+    color: #ff4d4d;
+    padding: 20px;
+}
+
+/* Styles for both flowchart and slide content areas */
+.flowchart-content, .slide-content {
+    padding: 20px 25px;
+    flex-grow: 1;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    line-height: 1.7;
+}
+
+.flowchart-content h3, .slide-content h3 {
+    color: #62dafb;
+    margin-top: 0;
+    border-bottom: 1px solid #555;
+    padding-bottom: 10px;
+}
+
+/* New styles for the flowchart list */
+.flowchart-list {
+    list-style: none;
+    padding-left: 20px;
+    position: relative;
+}
+
+.flowchart-list li {
+    padding-left: 30px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+/* Creates the flowchart connecting lines */
+.flowchart-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: #62dafb;
+    border-radius: 50%;
+    border: 3px solid #282c34;
+}
+
+.flowchart-list li::after {
+    content: '';
+    position: absolute;
+    left: 9px;
+    top: 25px;
+    width: 2px;
+    height: 100%;
+    background-color: #555;
+}
+
+.flowchart-list li:last-child::after {
+    display: none; /* Removes the line after the last item */
+}
+
+
+/* Navigation bar styles */
+.slide-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    border-top: 1px solid #555;
+    background-color: #282c34;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.slide-navigation button {
+    background-color: #62dafb;
+    color: #282c34;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.slide-navigation button:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
+
+/* Special style for the "Start Lesson" button */
+.start-lesson-btn {
+    width: 100%; /* Makes the button span the full width */
+}
